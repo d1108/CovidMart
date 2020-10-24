@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Customize your mask</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div id="user">
+            <span id="userlogo"><i class="fa fa-user" aria-hidden="true"></i></span>
+            <span class="cabin" id="usertext">Hello Dhruvil!</span>
+        </div>
+        <div id="menu">
+            <div id="menutext" class="cabin">
+                Home
+            </div>
+            <div id="menutext" class="cabin">
+                My Orders
+            </div>
+            <div id="menutext" class="cabin">
+                My Cart
+            </div>
+            <div id="menutext" class="cabin">
+                Sale an Item
+            </div>
+            <div id="menutext" class="cabin">
+                My Saled Items
+            </div>
+            <br>
+            <div id="menutext" class="cabin">
+                Logout
+            </div>
+        </div>
+    </div>
+    <div class="rightmainpart">
+        <div id="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+        <div id="alertrect">
+            <div class="cabin alerttext"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;&nbsp;Covid-19 Alert</div>
+        </div>
+        <div id="tab" class="cabin">
+            <div id="tabtext">
+                <span id="tabtext">Sanitizers</span> <span id="tabtext">Masks</span> <span id="tabtext">Handwash</span> <span id="tabtext">More</span>
+        </div>
+        <div id="customizebox">
+            <div id="customtext">
+                Customize Your Mask
+            </div>
+        </div>
+    </div>
+    <center><div id="maskcut"></div></center>
+    <div id="continueshop" class="cabin continueshoptext">
+        Continue Shopping this mask &nbsp;&nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+    </div>
+    <div id="tab2">
+        <span id="leftactive" class="cabin">
+            LEFT
+        </span>
+        <span id="rightinactive" class="cabin">RIGHT</span>
+    </div>
+    </div>
+</body>
+<style>
+    .navbar{
+        position: fixed;
+        width: 20%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background: linear-gradient(180deg, #AFD9B5 0%, rgba(175, 217, 181, 0) 167.1%);
+    }
+    .rightmainpart{
+        position: absolute;
+        width: 80%;
+        height: 1354px;
+        left: 20%;
+        top: 0px;
+    }
+    #cart{
+        position: absolute;
+        top:10px;
+        right: 25px;
+        font-size: 35px;
+    }
+    #alertrect{
+        position: absolute;
+        width: 231px;
+        height: 54px;
+        right : 100px;
+        top: 10px;
+        background: #B41313;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        text-align: center;
+    }
+    .cabin{
+        font-family: mainfont;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: mainfont;
+        src: url(fonts/CabinCondensed-Medium.ttf);
+      }
+    .alerttext{
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        padding: 15px;
+    }
+    #tab{
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        left: 0px;
+        top: 80px;
+        right: 0;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        color: black;
+    }
+    #tabtext{
+        padding-top: 16px;
+        font-size: 18px;
+        padding-left: 10px;
+        font-weight: 500;
+        padding-right: 60px;
+    }
+    #customizebox{
+        position: absolute;
+        width: 261px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background: #B7DDBC;
+    }
+    #customtext{
+        padding-top: 16px;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+    }
+    #maskcut{
+        position:relative;
+        top: 180px;
+        background-image: url(images/maskcut.png);
+        width: 539px;
+        height: 358px;
+    }
+    #continueshop{
+        position: absolute;
+        width: 292px;
+        height: 56px;
+        right: 30px;
+        top: 500px;
+        background: #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .continueshoptext{
+        color: white;
+        font-weight: 20;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 15px;
+    }
+    #tab2{
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        left: 0px;
+        top: 600px;
+        right: 0;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        color: black;
+    }
+    #leftactive{
+        position: absolute;
+        width: 231px;
+        height: 100%;
+        left: 0px; 
+        background: #000000;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 18px;
+    }
+    #rightinactive{
+        position: absolute;
+        width: 231px;
+        height: 100%;
+        left: 231px; 
+        background: white;
+        color: black;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 18px;
+    }
+    #user{
+        position: absolute;
+        top: 25px;
+    }
+    #userlogo{
+        font-size: 30px;
+    }
+    #usertext{
+        padding-left: 15px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    #menu{
+        position: absolute;
+        top: 110px;
+    }
+    #menutext{
+        font-size: 25px;
+        font-weight: normal;
+    }
+</style>
+</html>
